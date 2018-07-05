@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dayDate"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/saturday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/horizontalBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/addTitleHeader"
+            android:text="@string/titleHeader"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/addTitle"
+            android:inputType="text"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:hint="@string/hintTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startTimeLayout"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/startTimeHeader"
+            android:text="@string/startTimeHeader"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/startTimeButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/endTimeLayout"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/endTimeHeader"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:text="@string/endTimeHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/endTimeButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/descriptionLayout"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/descriptionHeader"
+            android:text="@string/descriptionHeader"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:hint="@string/hintDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cancelSubmitLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_gravity="bottom|center"
+            android:layout_weight="1"
+            android:scaleY=".9"
+            android:scaleX=".9"
+            android:text="@string/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/button"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_gravity="bottom|center"
+            android:scaleY=".9"
+            android:scaleX=".9"
+            android:layout_weight="1"
+            android:text="@string/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/button"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
