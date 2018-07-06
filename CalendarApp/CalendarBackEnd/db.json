@@ -1,152 +1,60 @@
 {
   "events": [
     {
-      "eventTitle": "Ek's BBQ",
-      "eventDate": "2018-07-17",
-      "startTime": "12:32pm",
-      "endTime": "05:20pm",
+      "endTime": "17:20",
+      "eventDate": "2018-08-17",
       "eventDescription": "Don't forget the potato salad!",
+      "eventTitle": "Ek's BBQ",
+      "startTime": "23:32",
       "id": 1
     },
     {
-      "eventTitle": "Change Pool Filter",
-      "eventDate": "2018-07-24",
-      "startTime": "12:42pm",
-      "endTime": "12:55pm",
+      "endTime": "12:55",
+      "eventDate": "2018-08-24",
       "eventDescription": "Get the pool ready!",
+      "eventTitle": "Change Pool Filter",
+      "startTime": "12:42",
       "id": 2
     },
     {
-      "endTime": "Nicky's Girl",
-      "eventDate": "17:10",
+      "endTime": "23:57",
+      "eventDate": "2018-08-24",
+      "eventDescription": "Nicky's Girl",
       "eventTitle": "Baby Shower",
-      "startTime": "00:02",
+      "startTime": "23:57",
       "id": 3
     },
     {
-      "endTime": "17:37",
-      "eventDescription": "jjj",
-      "eventTitle": "kkkkk",
-      "startTime": "17:37",
+      "endTime": "20:54",
+      "eventDate": "2018-08-24",
+      "eventDescription": "Finish hw",
+      "eventTitle": "Assignments!",
+      "startTime": "20:54",
       "id": 4
     },
     {
-      "endTime": "17:37",
-      "eventDescription": "jjj",
-      "eventTitle": "kkkkk",
-      "startTime": "17:37",
+      "endTime": "21:55",
+      "eventDate": "2018-08-24",
+      "eventDescription": "Bring a Present",
+      "eventTitle": "Birthday Celebration",
+      "startTime": "20:55",
       "id": 5
     },
     {
-      "endTime": "17:38",
-      "eventDescription": "jj",
-      "eventTitle": "ll",
-      "startTime": "17:38",
+      "endTime": "20:56",
+      "eventDate": "2018-08-24",
+      "eventDescription": "Finishing Book Reading",
+      "eventTitle": "Book",
+      "startTime": "20:56",
       "id": 6
     },
     {
-      "endTime": "17:50",
-      "eventDate": "2018-07-26",
-      "eventDescription": "",
-      "eventTitle": "",
-      "startTime": "17:50",
+      "endTime": "20:56",
+      "eventDate": "2018-08-24",
+      "eventDescription": "Too many",
+      "eventTitle": "Last Item",
+      "startTime": "20:56",
       "id": 7
-    },
-    {
-      "endTime": "17:50",
-      "eventDate": "2018-07-26",
-      "eventDescription": "jjj",
-      "eventTitle": "kkk",
-      "startTime": "17:50",
-      "id": 8
-    },
-    {
-      "endTime": "23:31",
-      "eventDate": "2018-07-25",
-      "eventDescription": "More Tests",
-      "eventTitle": "Test",
-      "startTime": "23:31",
-      "id": 9
-    },
-    {
-      "endTime": "23:41",
-      "eventDate": "2018-07-25",
-      "eventDescription": "sdfsd",
-      "eventTitle": "fjsflksdjf",
-      "startTime": "23:41",
-      "id": 10
-    },
-    {
-      "endTime": "23:41",
-      "eventDate": "2018-07-25",
-      "eventDescription": "asdfds",
-      "eventTitle": "asdfadsfsa",
-      "startTime": "23:41",
-      "id": 11
-    },
-    {
-      "endTime": "23:42",
-      "eventDate": "2018-07-25",
-      "eventDescription": "aa",
-      "eventTitle": "aa",
-      "startTime": "23:42",
-      "id": 12
-    },
-    {
-      "endTime": "23:47",
-      "eventDate": "2018-07-25",
-      "eventDescription": "sdfs",
-      "eventTitle": "sfds",
-      "startTime": "23:47",
-      "id": 13
-    },
-    {
-      "endTime": "23:51",
-      "eventDate": "2018-07-25",
-      "eventDescription": "s",
-      "eventTitle": "ds",
-      "startTime": "23:51",
-      "id": 14
-    },
-    {
-      "endTime": "23:51",
-      "eventDate": "2018-07-25",
-      "eventDescription": "",
-      "eventTitle": "",
-      "startTime": "23:51",
-      "id": 15
-    },
-    {
-      "endTime": "23:51",
-      "eventDate": "2018-07-25",
-      "eventDescription": "",
-      "eventTitle": "s",
-      "startTime": "23:51",
-      "id": 16
-    },
-    {
-      "endTime": "23:51",
-      "eventDate": "2018-07-25",
-      "eventDescription": "",
-      "eventTitle": "dsfs",
-      "startTime": "23:51",
-      "id": 17
-    },
-    {
-      "endTime": "23:56",
-      "eventDate": "2018-07-25",
-      "eventDescription": "",
-      "eventTitle": "fffff",
-      "startTime": "23:56",
-      "id": 18
-    },
-    {
-      "endTime": "23:57",
-      "eventDate": "2018-07-25",
-      "eventDescription": "",
-      "eventTitle": "dsfssd",
-      "startTime": "23:57",
-      "id": 19
     }
   ],
   "users": {

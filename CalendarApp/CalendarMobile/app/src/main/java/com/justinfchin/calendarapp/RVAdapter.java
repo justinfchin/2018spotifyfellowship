@@ -1,22 +1,17 @@
+// for RecyclerView
 package com.justinfchin.calendarapp;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+
 import android.widget.TextView;
 
-import com.justinfchin.calendarapp.activity.MainActivity;
-import com.justinfchin.calendarapp.activity.PopUp;
 import com.justinfchin.calendarapp.retrofit.EventItem;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -45,7 +40,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ViewHolder> {
      *
      * @param parent View
      * @param viewType
-     * @return
+     * @return ViewHolder
      */
     @Override
     public RVAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){

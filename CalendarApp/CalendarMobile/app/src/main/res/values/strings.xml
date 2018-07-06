@@ -8,12 +8,11 @@
     <string name="friday">Fri</string>
     <string name="saturday">Sat</string>
 
-    <string name="Lorem">Lorem</string>
     <string name="detailsHeader">Details</string>
 
     <item type="id" name="tagDayDate">DAY_DATE</item>
     <item type="id" name="tagDate">DATE</item>
-
+    <string name="defaultCount">+0</string>
     <string name="title">title</string>
     <string name="titleHeader">Title</string>
     <string name="description">description</string>
@@ -28,5 +27,4 @@
     <string name="startTimeHeader">Start Time</string>
     <string name="endTimeHeader">End Time</string>
 
-    <string name="selectTime">Select Time</string>
 </resources>

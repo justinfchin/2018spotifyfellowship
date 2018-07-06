@@ -1,25 +1,19 @@
-// for adding
+// for adding new events
+
 package com.justinfchin.calendarapp.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.TimePickerDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.res.Resources;
+
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.util.DisplayMetrics;
+
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
-import android.view.inputmethod.InputMethodManager;
+
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.ThemedSpinnerAdapter;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -28,12 +22,7 @@ import com.justinfchin.calendarapp.retrofit.ApiService;
 import com.justinfchin.calendarapp.retrofit.EventItem;
 import com.justinfchin.calendarapp.retrofit.RetrofitNetwork;
 
-import org.w3c.dom.Text;
-
-import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
 import java.util.Locale;
 
 import retrofit2.Call;
@@ -44,8 +33,6 @@ public class Add extends Activity{
 
     ApiService apiService = RetrofitNetwork.getService();
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,8 +41,6 @@ public class Add extends Activity{
         // Updated Title Header
         TextView tvDayDate = findViewById(R.id.dayDate);
         tvDayDate.setText(getIntent().getExtras().getString("DAY_DATE"));
-
-
 
         // Cancel Button
         Button cancelButton = findViewById(R.id.cancelButton);
@@ -66,8 +51,7 @@ public class Add extends Activity{
             }
         });
 
-
-
+        // Get Current Time to show in Time Buttons
         LocalTime now = LocalTime.now();
         String hhmm = String.format(Locale.US,"%02d",now.getHour())+":"+
                 String.format(Locale.US,"%02d",now.getMinute());
@@ -82,7 +66,7 @@ public class Add extends Activity{
             }
         });
 
-        //End Time Button
+        // End Time Button
         final Button endTimeButton = findViewById(R.id.endTimeButton);
         endTimeButton.setText(hhmm);
         endTimeButton.setOnClickListener(new View.OnClickListener() {
@@ -94,7 +78,6 @@ public class Add extends Activity{
 
         // Submit Button
         final Button submitButton = findViewById(R.id.submitButton);
-
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,21 +87,20 @@ public class Add extends Activity{
                 // get inputs
                 String title = etTitle.getText().toString();
                 String date = getIntent().getExtras().getString("DATE");
-                Log.d("addDate",date);
                 String startTime = startTimeButton.getText().toString();
                 String endTime = endTimeButton.getText().toString();
                 String description = tvDescription.getText().toString();
+                // create event
                 submitClick(new EventItem(title,date,startTime,endTime,description));
             }
         });
     }
 
-    /** For Time Picking
+    /** Creates TimePickerDialog when Button Clicked
      *
-     *
+     * @param b a Button
      */
     public void timePicker(final Button b){
-
 
         AlertDialog timeDialog = new TimePickerDialog(Add.this, new TimePickerDialog.OnTimeSetListener() {
             @Override
@@ -135,6 +117,7 @@ public class Add extends Activity{
 
     /** Submit Clicking
      *
+     * @param eventItem to be created
      */
     void submitClick(EventItem eventItem){
         ApiService apiService = RetrofitNetwork.getService();
@@ -142,16 +125,17 @@ public class Add extends Activity{
             @Override
             public void onResponse(Call<EventItem> call, Response<EventItem> response) {
                 Toast.makeText(Add.this,"Event Successfully Added...",Toast.LENGTH_LONG).show();
+                setResult(Activity.RESULT_OK);
+                finish();
             }
 
             @Override
             public void onFailure(Call<EventItem> call, Throwable t) {
-                Log.d("addFail",t.getMessage());
                 Toast.makeText(Add.this,t.getMessage(),Toast.LENGTH_LONG).show();
             }
         });
 
-        finish();
+
     }
 
 
