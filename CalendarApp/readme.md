@@ -1,45 +1,49 @@
 # CalendarApp
 - A calendar android app 
+    - make sure to have json server running first
+
 ### Contents
-1.[Pics of Usage](#pics)
-2.[GIF of Usage](#gif)
-3.[CalendarMobile](#cm)
-4.[CalendarBackEnd](#cb)
+1. [Media Showing Usage](#pics)
+2. [CalendarMobile](#cm)
+3. [CalendarBackEnd](#cb)
 
-## Pics of Usage
 <a name = "pics"/>
-- Main > Click a Day > Click an Event > Click FloatingActionButton 
-<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/main.png" width="200" height="400">
 
-<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/day.png" width="200" height="400">
+## Media Showing Usage
+- Home View > After Clicking a Day > After Clicking an Event
+<p>
+<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/main.png" width="250" height="400">
+<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/day.png" width="250" height="400">
+<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/event.png" width="250" height="400">
+</p>
+- After Clicking the FloatingActionButton > After Adding a Day > GIF
+<p>
+<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/fab.png" width="250" height="400">
+<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/post.png" width="250" height="400">
+<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/overview.gif" width="250" height="400">
+</p>
 
-<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/event.png" width="200" height="400">
-
-<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/fab.png" width="200" height="400">
-
-- After Adding a Day
-<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/post.png" width="200" height="400">
-
-## GIF of Usage
-<a name = "gif" />
-![overview|200x400](https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/overview.gif)
-
-## CalendarMobile
 <a name = "cm" />
-- [Folder](https://github.com/justinfchin/2018spotifyfellowship/tree/master/CalendarApp/CalendarMobile)
+
+## [CalendarMobile](https://github.com/justinfchin/2018spotifyfellowship/tree/master/CalendarApp/CalendarMobile)
+
+
 - Additional Specs:
     - Too many events
-        - lorem
+        - Fixed with a counter of events on main and allowed user to scroll through the events after clicking on the day to expand
     - Correct Date on Correct Days
-        - lorem
+        - Found the first day that the month starts and labeled the dates starting there
 - Additional Notes:
-    - lorem
+    - included 6 rows instead of 5 rows since months like December 2018 will require 6 weeks 
 
-## CalendarBackend
 <a name = "cb" />
-- [Folder](https://github.com/justinfchin/2018spotifyfellowship/tree/master/CalendarApp/CalendarBackend)
+
+## [CalendarBackend](https://github.com/justinfchin/2018spotifyfellowship/tree/master/CalendarApp/CalendarBackend)
+
 - I used a [JSON server](https://github.com/typicode/json-server) for the backend
 - To run server, in terminal:
     - `json-server --watch db.json`
 - To access server, in browser:
     - `http://localhost:3000`
+- Example JSON data
+<img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/json.png" width="300" height="300">
