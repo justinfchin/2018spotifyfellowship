@@ -8,16 +8,13 @@
 
 ## Pics of Usage
 <a name = "pics"/>
-- Main
+- Main > Click a Day > Click an Event > Click FloatingActionButton 
 <img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/main.png" width="200" height="400">
 
-- After Clicking a Day
 <img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/day.png" width="200" height="400">
 
-- After Clicking an Event
 <img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/event.png" width="200" height="400">
 
-- After Clicking the FloatingActionButton +
 <img src="https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/images/fab.png" width="200" height="400">
 
 - After Adding a Day
@@ -29,7 +26,7 @@
 
 ## CalendarMobile
 <a name = "cm" />
-- [Folder](https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/CalendarMobile)
+- [Folder](https://github.com/justinfchin/2018spotifyfellowship/tree/master/CalendarApp/CalendarMobile)
 - Additional Specs:
     - Too many events
         - lorem
@@ -40,7 +37,7 @@
 
 ## CalendarBackend
 <a name = "cb" />
--- [Folder](https://github.com/justinfchin/2018spotifyfellowship/blob/master/CalendarApp/CalendarBackend)
+- [Folder](https://github.com/justinfchin/2018spotifyfellowship/tree/master/CalendarApp/CalendarBackend)
 - I used a [JSON server](https://github.com/typicode/json-server) for the backend
 - To run server, in terminal:
     - `json-server --watch db.json`
